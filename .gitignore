@@ -11,3 +11,5 @@ wheels/
 
 # environment file
 .env
+.env.docker
+.env.local
