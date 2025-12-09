@@ -22,7 +22,6 @@ class Document(UUIDMixin, Base):
     __tablename__ = "documents"
 
     filename = Column[str](String, nullable=False)
-    original_filename = Column[str](String, nullable=False)
     file_path = Column[str](String, nullable=False)
     content_type = Column[str](String, nullable=True)
     file_size = Column[int](Integer, nullable=True)

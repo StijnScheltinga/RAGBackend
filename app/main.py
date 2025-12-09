@@ -4,7 +4,6 @@ from app.api import api_router
 app = FastAPI()
 app.include_router(api_router)
 
-
 @app.get("/")
 def health():
 	return {"hello": "world"}
