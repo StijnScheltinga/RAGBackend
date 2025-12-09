@@ -4,11 +4,30 @@ services:
     image: postgres:18
     container_name: rag_postgres
     env_file:
-      - .env
+      - .env.docker
     ports:
       - "5432:5432"
     volumes:
      - rag_postgres_data:/var/lib/postgresql
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U $${POSTGRES_USER} -d $${POSTGRES_DB}"]
+      interval: 10s
+      retries: 5
+      start_period: 30s
+      timeout: 10s
+
+  api:
+    build: .
+    container_name: rag_api
+    env_file:
+      - .env.docker
+    ports:
+      - "8000:8000"
+    depends_on:
+      postgres:
+        condition: service_healthy
+    
+    
 
 volumes:
   rag_postgres_data:
