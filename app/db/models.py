@@ -1,9 +1,17 @@
+import enum
 from app.db import Base
-from sqlalchemy import Column, Integer, String, DateTime
+from sqlalchemy import Column, Integer, String, DateTime, Enum
 from sqlalchemy.dialects.postgresql import UUID
 from sqlalchemy.orm import declared_attr
 from sqlalchemy.sql import func
 from datetime import datetime
+
+
+class FileStatus(enum.Enum):
+    UPLOADED = "uploaded"
+    PROCESSING = "processing"
+    READY = "ready"
+    FAILED = "failed"
 
 
 class UUIDMixin:
@@ -18,12 +26,24 @@ class UUIDMixin:
         )
 
 
-class Document(UUIDMixin, Base):
+class TimestampMixin:
+
+    @declared_attr
+    def created_at(cls):
+        return Column[datetime](DateTime, server_default=func.now(), nullable=False)
+
+    @declared_attr
+    def updated_at(cls):
+        return Column[datetime](
+            DateTime, server_default=func.now(), onupdate=func.now(), nullable=False
+        )
+
+
+class Document(UUIDMixin, TimestampMixin, Base):
     __tablename__ = "documents"
 
     filename = Column[str](String, nullable=False)
     file_path = Column[str](String, nullable=False)
+    status = Column[enum.Enum](Enum(FileStatus), nullable=False)
     content_type = Column[str](String, nullable=True)
     file_size = Column[int](Integer, nullable=True)
-    created_at = Column[datetime](DateTime, server_default=func.now(), nullable=False)
-

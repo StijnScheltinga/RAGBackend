@@ -27,7 +27,7 @@ services:
       postgres:
         condition: service_healthy
     volumes:
-      - ./data:/app/data
+      - .:/app
 
   qdrant:
     image: qdrant/qdrant:latest
