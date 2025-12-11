@@ -91,6 +91,15 @@ wheels = [
 ]
 
 [[package]]
+name = "dramatiq"
+version = "2.0.0"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/06/73/0a082a71634438099e19a80dde5c1a4c0c8c19f21844bc997eb8971feaf9/dramatiq-2.0.0.tar.gz", hash = "sha256:85ff840bcc1393812e0079bb310036f647e011036124a7a1492692da7966a093", size = 102989, upload-time = "2025-11-18T11:11:33.322Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/38/4b/4a538e5c324d5d2f788f437531419c7331c7f958591c7b6075b5ce931520/dramatiq-2.0.0-py3-none-any.whl", hash = "sha256:732eff33f9080338b528f2dff7336a5145687cf9efb57a6a0bbd42ca937f1a30", size = 123850, upload-time = "2025-11-18T11:11:31.9Z" },
+]
+
+[[package]]
 name = "email-validator"
 version = "2.3.0"
 source = { registry = "https://pypi.org/simple" }
@@ -853,6 +862,7 @@ version = "0.1.0"
 source = { virtual = "." }
 dependencies = [
     { name = "alembic" },
+    { name = "dramatiq" },
     { name = "fastapi", extra = ["standard"] },
     { name = "httpx" },
     { name = "psycopg2" },
@@ -867,6 +877,7 @@ dependencies = [
 [package.metadata]
 requires-dist = [
     { name = "alembic", specifier = ">=1.17.2" },
+    { name = "dramatiq", specifier = ">=2.0.0" },
     { name = "fastapi", extras = ["standard"], specifier = ">=0.123.9" },
     { name = "httpx", specifier = ">=0.28.1" },
     { name = "psycopg2", specifier = ">=2.9.11" },

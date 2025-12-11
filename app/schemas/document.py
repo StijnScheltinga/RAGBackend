@@ -8,7 +8,7 @@ class DocumentResponse(BaseModel):
     id: UUID
     filename: str
     file_path: str
-    status: FileStatus
+    file_status: FileStatus
     content_type: str | None
     file_size: int | None
     created_at: datetime

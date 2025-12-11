@@ -21,7 +21,7 @@ def upload(session: Annotated[Session, Depends(get_db)], file: UploadFile):
 		document = Document(
 			filename=file.filename,
 			file_path="",  # Temporary, will update after we get UUID
-			status=FileStatus.UPLOADED,
+			file_status=FileStatus.UPLOADED,
 			content_type=file.content_type,
 			file_size=file.size
 		)

@@ -26,8 +26,30 @@ services:
     depends_on:
       postgres:
         condition: service_healthy
+      qdrant:
+        condition: service_started
+      redis:
+        condition: service_started
     volumes:
       - .:/app
+
+  worker:
+    build: .
+    container_name: rag_worker
+    env_file:
+      - .env.docker
+    depends_on:
+      postgres:
+        condition: service_healthy
+      qdrant:
+        condition: service_started
+      redis:
+        condition: service_started
+    volumes:
+      - .:/app
+    command: ["dramatiq", "app.workers.tasks"]
+
+
 
   qdrant:
     image: qdrant/qdrant:latest
@@ -36,7 +58,12 @@ services:
       - "6333:6333"
     volumes:
       - rag_qdrant_data:/qdrant/storage
-    
+  
+  redis:
+    image: redis:7
+    container_name: rag_redis
+    ports:
+      - "6379:6379"
     
 
 volumes:

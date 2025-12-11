@@ -1,6 +1,6 @@
 import enum
 from app.db import Base
-from sqlalchemy import Column, Integer, String, DateTime, Enum
+from sqlalchemy import Column, Integer, String, DateTime, Enum, ForeignKey
 from sqlalchemy.dialects.postgresql import UUID
 from sqlalchemy.orm import declared_attr
 from sqlalchemy.sql import func
@@ -44,6 +44,13 @@ class Document(UUIDMixin, TimestampMixin, Base):
 
     filename = Column[str](String, nullable=False)
     file_path = Column[str](String, nullable=False)
-    status = Column[enum.Enum](Enum(FileStatus), nullable=False)
+    file_status = Column[enum.Enum](Enum(FileStatus, name='file_status'), nullable=False)
     content_type = Column[str](String, nullable=True)
     file_size = Column[int](Integer, nullable=True)
+
+class Chunk(UUIDMixin, TimestampMixin, Base):
+    __tablename__ = "chunks"
+
+    document_id = Column[UUID](UUID[UUID](), ForeignKey('documents.id', ondelete='CASCADE'), nullable=False, index=True)
+    position = Column[int](Integer, nullable=False)
+    text = Column[str](String, nullable=False)
