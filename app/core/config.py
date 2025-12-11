@@ -8,6 +8,7 @@ class Settings(BaseSettings):
     POSTGRES_PORT: str
     POSTGRES_URL: str
 
+
     class Config:
         env_file = ".env.local"
 

@@ -5,6 +5,7 @@ from app.db.models import Document, FileStatus
 from app.schemas.document import DocumentListResponse
 from sqlalchemy.orm import Session
 from app.db import get_db
+from app.workers.tasks import process_document
 import shutil
 
 router = APIRouter()
@@ -40,6 +41,9 @@ def upload(session: Annotated[Session, Depends(get_db)], file: UploadFile):
 		# Update document with the actual file path
 		document.file_path = str(file_path)
 		session.commit()
+
+		# Send document to dramatiq for processing
+		process_document.send(str(document.id))
 		
 		return {
 			"message": "File uploaded successfully",
