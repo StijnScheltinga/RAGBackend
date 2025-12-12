@@ -3,11 +3,14 @@ import dramatiq
 from dramatiq.brokers.redis import RedisBroker
 from sqlalchemy import Unicode
 from app.db import SessionLocal
-from app.db.models import Document, FileStatus
+from app.db.models import Document, Chunk, FileStatus
 from pathlib import Path
 
 redis_broker = RedisBroker(host="redis")
 dramatiq.set_broker(redis_broker)
+
+def create_chunks(text: str):
+	pass
 
 @dramatiq.actor
 def process_document(document_id: str):
@@ -48,7 +51,7 @@ def process_document(document_id: str):
 			document.file_status == FileStatus.FAILED
 			return
 		
-		print(text)
+		create_chunks(text)
 
 	finally:
 		session.close()

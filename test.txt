@@ -1,0 +1,175 @@
+
+# silverthorne legal group – associate attorney onboarding guide (2025)
+
+this onboarding guide applies to all new associate attorneys at silverthorne legal group (“slg”).
+
+## 1. first week – essentials
+
+during the first week, new associates must:
+
+1. set up accounts for:
+   - slg email
+   - document management system (dms)
+   - timekeeping and billing system
+   - legal research platform (lexisearch)
+2. attend mandatory trainings:
+   - ethics and confidentiality (1 hour)
+   - timekeeping best practices (45 minutes)
+   - conflict-check training (30 minutes)
+3. shadow a senior attorney in at least one client meeting.
+
+## 2. first month – integration
+
+during the first month, associates should:
+
+- review the **client intake policy (2025)**.
+- observe at least **one deposition or hearing**.
+- draft:
+  - one research memo.
+  - one client communication under supervision.
+- submit all billable time by **9:00 am each weekday**.
+
+a check-in with the practice group leader is required at the end of week 4.
+
+## 3. first 90 days – competency goals
+
+by day 90, associates are expected to:
+
+- perform conflict checks independently.
+- open a matter in the practice management system (with oversight).
+- demonstrate understanding of:
+  - annual leave policy
+  - sick leave policy
+  - cle budget rules
+- assist in at least **two client matters**.
+
+## 4. evaluation
+
+the probationary review (90 days) assesses:
+
+- legal analysis
+- writing quality
+- responsiveness to clients
+- use of the dms
+- adherence to slg procedures
+
+# Silverthorne Legal Group – Client Intake Policy (2025)
+
+## 1. Purpose
+
+This document describes the official client intake process at Silverthorne Legal Group (“SLG”).  
+The process ensures that all new matters comply with ethical rules, conflict-of-interest checks, and proper documentation standards.
+
+## 2. Initial Inquiry
+
+All initial inquiries, whether by phone, email, or website form, must be logged in the SLG CRM system within 24 hours.
+
+The following information must be collected:
+- Full name of the potential client.
+- Basic description of the legal issue.
+- Names of all opposing or related parties.
+- Preferred contact method.
+- Urgency assessment (“Routine”, “Time-Sensitive”, “Emergency”).
+
+## 3. Conflict Check
+
+### 3.1 Procedure
+
+Before any legal advice is given, a mandatory conflict check must be performed using the Firm Conflict Database.
+
+The conflict check must include:
+1. Names of the potential client.
+2. Names of adverse or related parties.
+3. Any attorneys at SLG with prior involvement in similar matters.
+
+### 3.2 Outcomes
+
+A conflict check can result in three outcomes:
+- **Clear** → Proceed with intake.
+- **Conditional Approval** → Consult with the Managing Partner before continuing.
+- **Denied** → Decline representation and provide a standard referral list.
+
+No attorney may proceed with representation without a documented conflict clearance.
+
+## 4. Required Documents
+
+Before opening a formal matter, the following must be obtained:
+- Signed Engagement Agreement.
+- Copy of government-issued identification.
+- Completed Client Information Form.
+- Retainer payment or approved alternative billing arrangement.
+
+## 5. Matter Opening
+
+Once documentation is complete, the Client Services Coordinator opens the matter in the Practice Management System.
+
+The matter must be assigned:
+- A matter number.
+- A responsible attorney.
+- A billing category (“Hourly”, “Flat-Fee”, or “Contingency”).
+
+## 6. Time Expectations
+
+- Initial inquiries must be logged within **24 hours**.
+- Conflict checks must be completed within **1 business day**.
+- Matter opening should occur within **2 business days** after all documents are received.
+
+## 7. Review Schedule
+
+This policy is reviewed annually by the Managing Partner and updated as needed.
+
+# Silverthorne Legal Group – Employee Handbook (2025)
+
+## 1. Working Hours and Expectations
+
+Standard business hours are **8:30 AM to 5:30 PM, Monday through Friday**.  
+Employees are expected to be available during core hours: **10:00 AM to 3:00 PM**.
+
+Overtime for non-exempt employees must be approved in advance by a supervisor.
+
+## 2. Leave Policies
+
+### 2.1 Annual Leave
+
+Full-time employees receive **20 days of paid annual leave** per calendar year.  
+A maximum of **5 unused days may be carried over** to the next year.
+
+Annual leave requests must be submitted at least **7 days in advance**.
+
+### 2.2 Sick Leave
+
+Employees receive **8 paid sick days** per year.  
+Absences longer than **2 consecutive days** require a doctor’s note.
+
+Unused sick leave does **not** carry over.
+
+### 2.3 Court Leave
+
+Employees summoned for jury duty or subpoenaed as a witness will receive paid court leave for the duration of their required service.
+
+## 3. Professional Development
+
+SLG offers an annual **$1,500 Continuing Legal Education (CLE) budget** for each attorney.  
+Unused CLE funds do not carry over.
+
+## 4. Performance Reviews
+
+All employees receive:
+- A probationary review at 90 days.
+- Annual performance reviews in January.
+
+Reviews evaluate:
+- Professional competence.
+- Client communication.
+- Adherence to deadlines.
+- Team collaboration.
+
+## 5. Code of Conduct
+
+Employees must:
+- Maintain client confidentiality.
+- Avoid conflicts of interest.
+- Report ethical concerns to the Ethics Committee.
+- Treat colleagues and clients with respect at all times.
+
+Violations may result in disciplinary action, including termination.
